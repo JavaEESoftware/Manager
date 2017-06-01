@@ -7,6 +7,7 @@ import java.util.List;
 
 
 
+
 import com.model.Staff;
 import com.model.StaffDAO;
 import com.service.*;
@@ -19,6 +20,10 @@ public class StaffServiceImpl implements StaffService{
 	public void save(Staff staff)
 	{
 		staffDAO.save(staff);
+	}
+	public List findByDeid(String deid)
+	{
+		return staffDAO.findByDeid(deid);
 	}
 public List findByExample(Staff staff){
 		

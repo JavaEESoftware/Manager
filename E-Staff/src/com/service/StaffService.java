@@ -9,5 +9,6 @@ public interface StaffService {
 	public void save(Staff staff);
 	public List findAll();
 	public List findByStaid(String staid);
+	public List findByDeid(String deid);
 	public void deleteStaff(String[] staffID);
 }

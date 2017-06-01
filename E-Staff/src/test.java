@@ -52,9 +52,9 @@ public class test {
 	    public void testUserAction() throws Exception{  
 		
 			ClassPathXmlApplicationContext ctx=new ClassPathXmlApplicationContext("applicationContext.xml");
-consultNameByStaid ser =  (consultNameByStaid)ctx.getBean("consultNameByStaid");	 
-	
-	   ser.setStaid("170010001");
+deleteDepartment ser =  (deleteDepartment)ctx.getBean("deleteDepartment");	 
+	    String [] str={"008"};
+	    ser.setDepartmentID(str);
 	     //ser.execute();
 	    }
 	

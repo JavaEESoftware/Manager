@@ -218,6 +218,9 @@
 		<property name="departmentService">
 			<ref bean="departmentService"/>
 		</property>
+			<property name="staffService">
+			<ref bean="staffService"/>
+		</property>
 	</bean>
 	<bean id="editDepartment" class="com.action.editDepartment">
 		<property name="departmentService">
