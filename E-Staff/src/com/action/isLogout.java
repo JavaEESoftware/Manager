@@ -25,7 +25,7 @@ public class isLogout extends ActionSupport{
 		    sign.setDate(date);
 		    sign.setStaid(id);
 		    List<Sign> signList=signService.findByExample(sign);
-		    if(signList!=null)
+		    if(signList.size()!=0)
 		    {
 		    	if(signList.get(0).getSignout()!=null)
 		    	{//System.out.println("test1***********************");
